@@ -1,10 +1,17 @@
-# Visual-Geometric Policy Steering from In-Context Aligned Abstractions
+<div align="center">
 
-Code release for the paper *Visual-Geometric Policy Steering from In-Context
-Aligned Abstractions* (under review). Author information and repository URLs
-are withheld for double-blind review.
+# VG-Steer: Visual-Geometric Policy Steering from In-Context Aligned Abstractions
 
-Test-time steering of frozen robotic manipulation policies toward
+[Arthur Bucker](https://arthurfenderbucker.github.io/)<sup>1</sup>, [Pramod Anantharam](https://scholar.google.com/citations?user=yQ52qVkAAAAJ&hl=en)<sup>2</sup>, [Jonathan Francis](https://jonfranc.com/)<sup>1,2</sup>, [Jean Oh](https://www.cs.cmu.edu/~jeanoh/)<sup>1,3</sup>
+
+<sub><sup>1</sup>Robotics Institute, Carnegie Mellon University &nbsp;·&nbsp; <sup>2</sup>Robot Learning Lab, Bosch Center for Artificial Intelligence &nbsp;·&nbsp; <sup>3</sup>Lavoro AI</sub>
+
+[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://arthurfenderbucker.github.io/VG-Steer/)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.25199-b31b1b.svg)](https://arxiv.org/abs/2611.25199)
+
+</div>
+
+Official code release for VG-Steer. Test-time steering of frozen robotic manipulation policies toward
 out-of-distribution (OOD) scenes — without retraining or fine-tuning.
 
 ## Overview
@@ -117,7 +124,7 @@ fresh machine:
 
 ```bash
 # 1. Clone (packages/open_perception is vendored in this release)
-git clone <anonymized-repository-url> policy_abstraction
+git clone https://github.com/arthurfenderbucker/VG-Steer.git policy_abstraction
 cd policy_abstraction
 
 # 2. Heavy-storage symlinks (one-time per machine)
@@ -205,3 +212,14 @@ Test markers: `slow`, `integration` (requires HDF5/network/simulator), `gpu` (re
 - **Alignment:** DTW via [dtaidistance](https://github.com/wannesm/dtaidistance)
 - **3D:** Open3D, JAX / PyTorch (differentiable guidance and kinematics)
 - **Visualization:** [Rerun](https://rerun.io/)
+
+## Citation
+
+```bibtex
+@article{bucker2026vgsteer,
+  title   = {VG-Steer: Visual-Geometric Policy Steering from In-Context Aligned Abstractions},
+  author  = {Bucker, Arthur and Anantharam, Pramod and Francis, Jonathan and Oh, Jean},
+  journal = {arXiv preprint arXiv:2611.25199},
+  year    = {2026}
+}
+```
